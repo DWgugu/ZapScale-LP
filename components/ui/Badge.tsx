@@ -1,11 +1,12 @@
 interface BadgeProps {
     text: string;
+    className?: string;
   }
   
-  export const Badge = ({ text }: BadgeProps) => {
+  export const Badge = ({ text, className }: BadgeProps) => {
     return (
       <div
-        className="
+        className={`
           inline-flex
           items-center
           gap-2
@@ -16,7 +17,8 @@ interface BadgeProps {
           py-2
           rounded-full
           shadow-sm
-        "
+          ${className}
+        `}
       >
         <span className="text-gray-700 text-xs font-semibold">
           {text}

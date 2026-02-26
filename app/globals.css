@@ -83,5 +83,5 @@ html {
 }
 
 .animate-marquee {
-  animation: marquee-horizontal 30s linear infinite;
+  animation: marquee-horizontal 200s linear infinite;
 }

@@ -1,6 +1,5 @@
 import { Badge } from "../ui/Badge";
 import { Card } from "../ui/Card";
-import { Mic, Keyboard, MessageCircleCheck, MessagesSquare } from "lucide-react";
 
 export const Features = () => {
     return (
@@ -103,25 +102,21 @@ export const Features = () => {
 
                         <Card
                             title=""
-                            // icon={<Mic />}
                             description="Áudios enviados sem parecer encaminhados."
                         />
             
                         <Card
                             title=""
-                            // icon={<Keyboard />}
                             description="Simulação de digitação natural."
                         />
             
                         <Card
                             title=""
-                            // icon={<MessageCircleCheck />}
                             description="Envio programado com comportamento humano."
                         />
             
                         <Card
                             title=""
-                            // icon={<MessagesSquare />}
                             description="Mensagens naturais que geram confiança."
                         />
         

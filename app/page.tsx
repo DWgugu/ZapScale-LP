@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import { About } from "@/components/sections/About";
 import { Features } from "@/components/sections/Features";
 import { Hero } from "@/components/sections/Hero";
 import { Impact } from "@/components/sections/Impact";
@@ -17,6 +18,7 @@ export default function Home() {
         <Impact />
         <WhyChoose />
         <Payment />
+        <About />
       </main>
     </div>
   );

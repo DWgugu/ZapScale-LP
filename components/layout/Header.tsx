@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "../ui/Button";
 
-const sections = ["inicio", "planos"];
+const sections = ["inicio", "funcoes", "planos"];
 
 export default function Header() {
   const [active, setActive] = useState("inicio");
@@ -63,12 +63,12 @@ export default function Header() {
                 <a
                 href="#funcoes"
                 className={`px-4 py-2 transition-colors ${
-                    active === "planos"
+                    active === "funcoes"
                     ? "text-white border-b-2 border-zapscale-primary"
                     : "hover:text-white"
                 }`}
                 >
-                Funções
+                FUNÇÕES
                 </a>
             </li>
 
