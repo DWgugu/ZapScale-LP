@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 export const About = () => {
     return (
-        <section id="about" className="bg-gray-100 py-24">
+        <section id="como-funciona" className="bg-gray-100 py-24">
             <div className="mx-auto">
                 <div className="max-w-6xl mx-auto px-6 mb-16">
                     <Badge text="Nossa Missão" />

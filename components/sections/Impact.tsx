@@ -33,7 +33,7 @@ export const Impact = () => {
           </p>
 
           <p className="text-lg">
-            presente em + de <span className="text-[#0abdb0] font-semibold">120 países</span>
+            presente em + de <span className="text-[#0abdb0] font-semibold">5 países</span>
           </p>
         </InfiniteCarousel>
       </section>

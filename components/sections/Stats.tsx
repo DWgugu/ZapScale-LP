@@ -34,7 +34,7 @@ export const Stats = () => {
               {/* ITEM 3 */}
               <div>
                 <h3 className="text-4xl font-light text-left">
-                  +120<span className="text-zapscale-primary font-semibold">países</span>
+                  +5<span className="text-zapscale-primary font-semibold">países</span>
                 </h3>
                 <p className="text-gray-400 mt-2 text-sm text-left">
                  Utilizam a ZapScale
