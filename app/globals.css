@@ -3,13 +3,41 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Cores da marca ZapScale */
+  --zapscale-primary: #0abdb0;
+  --zapscale-primary-light: #33d6ca;
+  --zapscale-primary-dark: #089a8f;
+  --zapscale-green: #00b678;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+  /* Cores customizadas para usar no Tailwind */
+  --color-zapscale-primary: var(--zapscale-primary);
+  --color-zapscale-primary-light: var(--zapscale-primary-light);
+  --color-zapscale-primary-dark: var(--zapscale-primary-dark);
+  --color-zapscale-green: var(--zapscale-green);
+}
+
+/* Classes utilitárias para usar as cores */
+.text-zapscale-primary { color: var(--zapscale-primary); }
+.bg-zapscale-primary { background-color: var(--zapscale-primary); }
+.border-zapscale-primary { border-color: var(--zapscale-primary); }
+
+.text-zapscale-primary-light { color: var(--zapscale-primary-light); }
+.bg-zapscale-primary-light { background-color: var(--zapscale-primary-light); }
+
+.text-zapscale-primary-dark { color: var(--zapscale-primary-dark); }
+.bg-zapscale-primary-dark { background-color: var(--zapscale-primary-dark); }
+
+.text-zapscale-green { color: var(--zapscale-green); }
+.bg-zapscale-green { background-color: var(--zapscale-green); }
+.border-zapscale-green { border-color: var(--zapscale-green); }
+
+.gradient-zapscale-primary {
+  background: linear-gradient(to right, var(--zapscale-primary-light), var(--zapscale-primary), var(--zapscale-primary-dark));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +50,38 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@keyframes float-soft {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes marquee-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-horizontal 30s linear infinite;
 }
