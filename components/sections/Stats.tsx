@@ -2,7 +2,7 @@ export const Stats = () => {
     return (
       <section className="bg-black text-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             
             {/* ===== LADO ESQUERDO (MÉTRICAS) ===== */}
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">

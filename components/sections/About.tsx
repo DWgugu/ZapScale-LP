@@ -28,10 +28,10 @@ export const About = () => {
                 <div className="relative -mb-[120px] md:-mb-[150px] max-w-4xl mx-auto px-6 z-30">
                     <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-r from-purple-600 via-blue-600 to-green-500 p-1">
                         <div className="bg-white rounded-2xl h-[300px] flex flex-col items-center justify-center text-white text-lg gap-8">
-                            <h3 className="text-[28px] font-semibold leading-tight text-[#1a1a1a] mt-4">
+                            <h3 className="text-[28px] font-semibold leading-tight text-[#1a1a1a] text-center mt-4">
                                 Experimente gratuitamente
                             </h3>
-                            <p className="text-base text-[#1a1a1a] leading-relaxed">
+                            <p className="text-base text-[#1a1a1a] leading-relaxed text-center">
                                 Descubra o poder de um atendimento inteligente e humanizado.
                             </p>
                             <Button isAnimated className="bg-gradient-to-r from-[#33d6ca] via-[#0abdb0] to-[#089a8f] text-white text-xs h-12">

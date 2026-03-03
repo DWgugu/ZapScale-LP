@@ -9,7 +9,7 @@ export const Payment = () => {
                 <h2 className="text-[28px] font-semibold leading-tight text-[#1a1a1a] mb-8 mt-4">
                     Escolha o plano ideal para acelerar suas vendas no WhatsApp
                 </h2>
-                <div className="flex gap-8">
+                <div className="flex gap-8 lg:flex-row flex-col">
                     <PlanCard
                         title="Plano Gratuito"
                         price="Grátis"

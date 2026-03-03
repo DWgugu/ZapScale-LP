@@ -9,7 +9,7 @@ export const WhyChoose = () => {
                     Por que escolher o ZapScale?
                 </h2>
                 <div className="flex flex-col gap-8">
-                    <div className="flex gap-8">
+                    <div className="flex gap-8 sm:flex-row flex-col">
                         <Card
                             title="Preço acessível"
                             icon={<CircleDollarSign />}
@@ -29,7 +29,7 @@ export const WhyChoose = () => {
                         />
                     </div>
 
-                    <div className="flex gap-8">
+                    <div className="flex gap-8 sm:flex-row flex-col">
                         <Card
                             title="Privacidade e segurança"
                             icon={<Lock />}
