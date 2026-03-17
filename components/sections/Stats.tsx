@@ -5,10 +5,10 @@ export const Stats = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
             {/* ===== LADO ESQUERDO (MÉTRICAS) ===== */}
-            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-start items-center gap-4">
               
               {/* ITEM 1 */}
-              <div className="w-full">
+              <div className="sm:w-full">
                 <h3 className="text-4xl font-light text-left">
                   12.8<span className="text-zapscale-primary font-semibold">K</span>
                 </h3>
@@ -20,7 +20,7 @@ export const Stats = () => {
               <div className="hidden sm:block w-px bg-gray-700 h-20"></div>
   
               {/* ITEM 2 */}
-              <div className="w-full">
+              <div className="sm:w-full">
                 <h3 className="text-4xl font-light text-left">
                   2.8<span className="text-zapscale-primary font-semibold">MM</span>
                 </h3>

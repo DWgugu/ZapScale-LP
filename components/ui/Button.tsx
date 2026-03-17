@@ -1,9 +1,11 @@
+"use client";
+
 import { ReactNode } from "react";
 
 interface ButtonProps {
   readonly children: ReactNode;
   readonly className?: string;
-  readonly onClick?: () => void;
+  readonly onClick?: React.MouseEventHandler<HTMLElement>;
   readonly isAnimated?: boolean;
   readonly href?: string;
 }

@@ -3,15 +3,15 @@ import { Card } from "../ui/Card";
 
 export const Features = () => {
     return (
-        <section id="funcoes" className="bg-gray-100 py-24">
+        <section id="funcoes" className="bg-gray-100 sm:py-24 py-12">
             <div className="max-w-6xl mx-auto px-6">
-                <h2 className="text-[28px] font-semibold leading-tight text-[#1a1a1a] mb-8">
+                <h2 className="text-[28px] font-semibold leading-tight text-[#1a1a1a] sm:mb-8 mb-4">
                     Funcionalidades que aceleram suas vendas
                 </h2>
                 
                 <div className="grid md:grid-cols-2 gap-8 items-start">
                     {/* Coluna esquerda */}
-                    <div className="flex flex-col gap-16 min-h-[500px]">
+                    <div className="flex flex-col sm:gap-16 gap-4 min-h-[500px]">
                         <div>
                             <Badge text="Mensagens Instantâneas" />
                             <h3 className="text-[28px] mt-4 font-semibold leading-tight text-[#1a1a1a]">
@@ -44,7 +44,7 @@ export const Features = () => {
                     </div>
 
                     {/* Coluna direita - Funis no meio */}
-                    <div className="flex flex-col gap-16 min-h-[500px]">
+                    <div className="flex flex-col sm:gap-16 gap-4 min-h-[500px]">
                         <img src="https://placehold.co/540x220" alt="placeholder" />
 
                         <div>
@@ -65,7 +65,7 @@ export const Features = () => {
                     </div>
                 </div>
 
-                <div className="mt-12">
+                <div className="sm:mt-12 mt-4">
                     <Badge text="O DIFERENCIAL: IA INTEGRADA" />
                     <h3 className="text-[28px] mt-4 font-semibold leading-tight text-[#1a1a1a]">
                         Automatização inteligente com humanização real

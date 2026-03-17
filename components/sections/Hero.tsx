@@ -1,3 +1,6 @@
+"use client";
+
+import { handleScrollTo } from "@/util/scrollTo";
 import Button from "../ui/Button";
 import { Stats } from "./Stats";
 
@@ -9,13 +12,6 @@ export const Hero = () => {
       >
         {/* Parte branca - conteúdo principal */}
         <div className="max-w-6xl mx-auto px-6 pb-20">
-  
-          {/* Badge */}
-          {/* <div className="mb-6 flex justify-center">
-            <span className="px-4 py-1 text-sm rounded-full bg-purple-100 text-purple-600 font-medium">
-              ProdutoX
-            </span>
-          </div> */}
   
           {/* Headline */}
           <h1 className="text-4xl md:text-[54px] font-bold leading-tight text-gray-900">
@@ -34,7 +30,10 @@ export const Hero = () => {
   
           {/* Botões */}
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            <Button isAnimated className="bg-gradient-to-r from-[#33d6ca] via-[#0abdb0] to-[#089a8f] text-white text-xs">
+            <Button 
+                isAnimated 
+                onClick={(e) => handleScrollTo(e, "planos")} 
+                className="bg-gradient-to-r from-[#33d6ca] via-[#0abdb0] to-[#089a8f] text-white text-xs">
                 Escolher um plano ZapScale
             </Button>
   

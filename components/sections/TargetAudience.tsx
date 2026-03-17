@@ -4,7 +4,7 @@ import { BriefcaseBusiness, HandCoins, MonitorCheck, UsersRound } from "lucide-r
 
 export const TargetAudience = () => {
     return (
-      <section className="bg-gray-100 py-24">
+      <section className="bg-gray-100 sm:py-24 py-12">
         <div className="max-w-6xl mx-auto px-6">
           
           <div className="grid lg:grid-cols-2 gap-16 items-start">

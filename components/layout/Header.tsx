@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "../ui/Button";
+import { handleScrollTo } from "@/util/scrollTo";
 
 const sections = ["inicio", "funcoes", "planos", "como-funciona"];
 
@@ -16,22 +17,6 @@ const navItems = [
 export default function Header() {
   const [active, setActive] = useState("inicio");
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    e.preventDefault();
-    setMenuOpen(false);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - headerHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
@@ -89,7 +74,10 @@ export default function Header() {
           <li>
             <a
               href="#inicio"
-              onClick={(e) => handleScrollTo(e, "inicio")}
+              onClick={(e) => { 
+                handleScrollTo(e, "inicio");
+                setMenuOpen(false);
+              }}
               className={`px-4 py-2 transition-colors ${
                 active === "inicio"
                   ? "text-white border-b-2 border-zapscale-primary"
@@ -103,7 +91,10 @@ export default function Header() {
           <li>
             <a
               href="#funcoes"
-              onClick={(e) => handleScrollTo(e, "funcoes")}
+              onClick={(e) => { 
+                handleScrollTo(e, "funcoes");
+                setMenuOpen(false);
+              }}
               className={`px-4 py-2 transition-colors ${
                 active === "funcoes"
                   ? "text-white border-b-2 border-zapscale-primary"
@@ -119,7 +110,10 @@ export default function Header() {
           <li>
             <a
               href="#planos"
-              onClick={(e) => handleScrollTo(e, "planos")}
+              onClick={(e) => { 
+                handleScrollTo(e, "planos");
+                setMenuOpen(false);
+              }}
               className={`px-4 py-2 transition-colors ${
                 active === "planos"
                   ? "text-white border-b-2 border-zapscale-primary"
@@ -133,7 +127,10 @@ export default function Header() {
           <li>
             <a
               href="#como-funciona"
-              onClick={(e) => handleScrollTo(e, "como-funciona")}
+              onClick={(e) => { 
+                handleScrollTo(e, "como-funciona");
+                setMenuOpen(false);
+              }}
               className={`px-4 py-2 transition-colors ${
                 active === "como-funciona"
                   ? "text-white border-b-2 border-zapscale-primary"
@@ -148,7 +145,7 @@ export default function Header() {
 
       {/* Mobile: logo + hamburger */}
       <div className="flex lg:hidden items-center justify-between w-full">
-        <Image src="/zapscale-logo-default.png" alt="Logo" width={80} height={80} className="object-contain" />
+        <Image src="/zapscale-logo-default.png" alt="Logo" width={120} height={120} className="object-contain" />
         <button
           type="button"
           onClick={() => setMenuOpen((o) => !o)}
@@ -200,7 +197,10 @@ export default function Header() {
             <a
               key={id}
               href={`#${id}`}
-              onClick={(e) => handleScrollTo(e, id)}
+              onClick={(e) => { 
+                handleScrollTo(e, id);
+                setMenuOpen(false);
+              }}
               className={linkClass(id)}
             >
               {label}
